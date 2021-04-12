@@ -1,0 +1,49 @@
+@import "../../../animations/animations.scss";
+@import "../../../styles/variables.scss";
+
+.button {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: rgba(167, 151, 151, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: all 330ms;
+  border: 2px solid $green;
+  color: $green;
+
+  &:hover {
+    box-shadow: none;
+    cursor: pointer;
+    color: white;
+    background: $green;
+  }
+
+  &--primary {
+    border: 2px solid $green;
+    color: $green;
+    &:hover {
+      color: white;
+      background: $green;
+    }
+  }
+
+  &--secondary {
+    border: 2px solid $blue;
+    color: $blue;
+    &:hover {
+      color: white;
+      background: $blue;
+    }
+  }
+
+  &--tertiary {
+    border: 2px solid $red;
+    color: $red;
+    &:hover {
+      color: white;
+      background: $red;
+    }
+  }
+}

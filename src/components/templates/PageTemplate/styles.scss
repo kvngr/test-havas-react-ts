@@ -1,0 +1,16 @@
+.page-template {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+  grid-gap: 1rem;
+  grid-template-rows: 100px auto 100px;
+
+  &__main {
+    grid-column: main;
+    padding: 20px;
+  }
+}
